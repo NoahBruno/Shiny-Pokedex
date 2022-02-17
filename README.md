@@ -1,0 +1,2 @@
+# Shiny-Pokedex
+Shiny Mons

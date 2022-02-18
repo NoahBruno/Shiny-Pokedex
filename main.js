@@ -1,3 +1,4 @@
+let url = 'https://brave-discovered-sponge.glitch.me/movies';
 
 const fetchPokemon = () => {
     const promises = [];
@@ -11,7 +12,8 @@ const fetchPokemon = () => {
     Promise.all(promises).then(results => {
         const pokemon = results.map((data) =>
 
-            ({name: data.name,
+            ({
+                name: data.name,
                 id: data.id,
                 image: data.sprites.other.home.front_shiny,
                 height: data.height,
@@ -19,9 +21,10 @@ const fetchPokemon = () => {
                 type: data.types.map((type) => type.type.name).join(', ')
             }));
         displayPokemon(pokemon);
-        $("#submit").click(function(event) {
+        $("#submit").click(function (event) {
             event.preventDefault();
-            searchPokemons(pokemon);
+            searchPokemons(pokemon)
+
         })
     });
 
@@ -29,7 +32,7 @@ const fetchPokemon = () => {
 
 
 const displayPokemon = (pokemon) => {
-    const pokemonHtmlS = pokemon.map (pokeman =>
+    const pokemonHtmlS = pokemon.map(pokeman =>
 
         `<div class="card-group">
 <div class="card" style="width:18px;">
@@ -41,6 +44,7 @@ const displayPokemon = (pokemon) => {
             Height: ${pokeman.height}<br>
             Types: ${pokeman.type}<br>
         </p>
+        <div class="str_and_weak"></div>
         </div>
         </div> 
 </div>`)
@@ -59,13 +63,15 @@ function searchPokemons(pokemon) {
         if (pokemon[i].name === pokemonName) {
             $("#poke").empty();
             displayPokemons(pokemon[i]);
+            getBattleInfo(pokemon[i].type)
             break;
         }
     }
 }
 
+
 const displayPokemons = (pokeman) => {
-    const html=
+    const html =
         `<div class="card-group">
 <div class="card" style="width:18px;">
 <img src="${pokeman.image}">
@@ -83,3 +89,4 @@ const displayPokemons = (pokeman) => {
     $("#poke").append(html)
 
 }
+

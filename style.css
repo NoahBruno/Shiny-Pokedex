@@ -1,0 +1,75 @@
+:root {
+    --Normal: #A8A77A;
+    --Fire: #EE8130;
+    --Water: #6390F0;
+    --Grass: #7AC74C;
+    --Electric: #F7D02C;
+    --Ice: #96D9D6;
+    --Fighting: #C22E28;
+    --Poison: #A33EA1;
+    --Ground: #E2BF65;
+    --Flying: #A98FF3;
+    --Psychic: #F95587;
+    --Bug: #A6B91A;
+    --Rock: #B6A136;
+    --Ghost: #735797;
+    --Dark: #705746;
+    --Dragon: #6F35FC;
+    --Steel: #B7B7CE;
+    --Fairy: #D685AD;
+}
+
+.Normal {
+    background-color: var(--Normal);
+}
+.Fire {
+    background-color: var(--Fire);
+}
+.Water {
+    background-color: var(--Water);
+}
+.Grass {
+    background-color: var(--Grass);
+}
+.Electric {
+    background-color: var(--Electric);
+}
+.Ice {
+    background-color: var(--Ice);
+}
+.Fighting {
+    background-color: var(--Fighting);
+}
+.Poison {
+    background-color: var(--Poison);
+}
+.Ground {
+    background-color: var(--Ground);
+}
+.Flying {
+    background-color: var(--Flying);
+}
+.Psychic {
+    background-color: var(--Psychic);
+}
+.Bug {
+    background-color: var(--Bug);
+}
+.Rock {
+    background-color: var(--Rock);
+}
+.Ghost {
+    background-color: var(--Ghost);
+}
+.Dark {
+    background-color: var(--Dark);
+}
+.Dragon {
+    background-color: var(--Dragon);
+}
+.Steel {
+    background-color: var(--Steel);
+}
+.Fairy {
+    background-color: var(--Fairy);
+}

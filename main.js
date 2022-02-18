@@ -1,4 +1,3 @@
-let url = 'https://brave-discovered-sponge.glitch.me/movies';
 
 const fetchPokemon = () => {
     const promises = [];
@@ -63,6 +62,7 @@ function searchPokemons(pokemon) {
         if (pokemon[i].name === pokemonName) {
             $("#poke").empty();
             displayPokemons(pokemon[i]);
+            $('#Weak_Strength').empty();
             getBattleInfo(pokemon[i].type)
             break;
         }
@@ -71,9 +71,11 @@ function searchPokemons(pokemon) {
 
 
 const displayPokemons = (pokeman) => {
+    let typeArr = pokeman.type.split(", ");
+
     const html =
         `<div class="card-group">
-<div class="card" style="width:18px;">
+<div class="card ${colorTypes(typeArr[0])}" style="width:18px;">
 <img src="${pokeman.image}">
         <div class="card-body text-center">
         <h5>${pokeman.name}</h5>
@@ -87,6 +89,7 @@ const displayPokemons = (pokeman) => {
 </div>`
 
     $("#poke").append(html)
+    console.log(typeArr)
 
 }
 

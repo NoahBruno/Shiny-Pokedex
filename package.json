@@ -3,15 +3,14 @@
     {
       "type": "Normal",
       "strong": [
-        "ghost"
+        ""
       ],
       "weak": [
         "Rock",
-        "Ghost",
         "Steel\t"
-      ],
+      ],"NoEffectA":["Ghost"],
+      "NoEffectB":["Ghost"],
       "Resistant": [
-        "Ghost"
       ],
       "Vulnerable": [
         "Fighting"
@@ -32,9 +31,9 @@
         "Poison",
         "Psychic",
         "Bug",
-        "Ghost",
         "Fairy"
-      ],
+      ],"NoEffectA":["Ghost"],
+      "NoEffectB":[],
       "Resistant": [
         "Rock",
         "Bug",
@@ -58,10 +57,10 @@
         "Rock",
         "Steel",
         "Electric\t"
-      ],
+      ],"NoEffectA":[],
+      "NoEffectB":["Ground"],
       "Resistant": [
         "Fighting",
-        "Ground",
         "Bug",
         "Grass"
       ],
@@ -82,14 +81,15 @@
         "Poison",
         "Ground",
         "Rock",
-        "Ghost",
-        "Steel"
-      ],
+        "Ghost"
+      ],"NoEffectA":["Steel"],
+      "NoEffectB":[],
       "Resistant": [
         "Fighting",
         "Poison",
         "Grass",
-        "Fairy"
+        "Fairy",
+        "Bug"
       ],
       "Vulnerable": [
         "Ground",
@@ -107,14 +107,13 @@
         "Electric"
       ],
       "weak": [
-        "Flying",
         "Bug",
         "Grass"
-      ],
+      ],"NoEffectA":["Flying"],
+      "NoEffectB":["Electric"],
       "Resistant": [
         "Poison",
-        "Rock",
-        "Electric"
+        "Rock"
       ],
       "Vulnerable": [
         "Water",
@@ -135,7 +134,8 @@
         "Fighting",
         "Ground",
         "Steel"
-      ],
+      ],"NoEffectA":[],
+      "NoEffectB":[],
       "Resistant": [
         "Normal",
         "Flying",
@@ -166,7 +166,8 @@
         "Steel",
         "Fire",
         "Fairy"
-      ],
+      ],"NoEffectA":[],
+      "NoEffectB":[],
       "Resistant": [
         "Fighting",
         "Ground",
@@ -186,12 +187,12 @@
         "Psychic"
       ],
       "weak": [
-        "Normal",
         "Dark"
+      ],"NoEffectA":["Normal"],
+      "NoEffectB":[ "Normal",
+        "Fighting"
       ],
       "Resistant": [
-        "Normal",
-        "Fighting",
         "Poison",
         "Bug"
       ],
@@ -213,11 +214,11 @@
         "Fire",
         "Water",
         "Electric"
-      ],
+      ],"NoEffectA":[],
+      "NoEffectB":["Poison"],
       "Resistant": [
         "Normal",
         "Flying",
-        "Poison",
         "Rock",
         "Bug",
         "Steel",
@@ -247,13 +248,15 @@
         "Fire",
         "Water",
         "Dragon"
-      ],
+      ],"NoEffectA":[],
+      "NoEffectB":[],
       "Resistant": [
         "Bug",
         "Steel",
         "Fire",
         "Grass",
-        "Ice"
+        "Ice",
+        "Fairy"
       ],
       "Vulnerable": [
         "Ground",
@@ -273,7 +276,8 @@
         "Water",
         "Grass",
         "Dragon"
-      ],
+      ],"NoEffectA":[],
+      "NoEffectB":[],
       "Resistant": [
         "Steel",
         "Fire",
@@ -301,7 +305,8 @@
         "Fire",
         "Grass",
         "Dragon"
-      ],
+      ],"NoEffectA":[],
+      "NoEffectB":[],
       "Resistant": [
         "Ground",
         "Water",
@@ -324,11 +329,11 @@
         "Water"
       ],
       "weak": [
-        "Ground",
         "Grass",
         "Electric",
         "Dragon"
-      ],
+      ],"NoEffectA":["Ground"],
+      "NoEffectB":[],
       "Resistant": [
         "Flying",
         "Steel",
@@ -347,9 +352,9 @@
       ],
       "weak": [
         "Steel",
-        "Psychic",
-        "Dark"
-      ],
+        "Psychic"
+      ],"NoEffectA":["Dark"],
+      "NoEffectB":[],
       "Resistant": [
         "Fighting",
         "Psychic"
@@ -374,7 +379,8 @@
         "Fire",
         "Water",
         "Ice"
-      ],
+      ],"NoEffectA":[],
+      "NoEffectB":[],
       "Resistant": [
         "Ice"
       ],
@@ -392,9 +398,9 @@
         "Dragon"
       ],
       "weak": [
-        "Steel",
-        "Fairy"
-      ],
+        "Steel"
+      ],"NoEffectA":["Fairy"],
+      "NoEffectB":[],
       "Resistant": [
         "Fire",
         "Water",
@@ -419,11 +425,11 @@
         "Poison",
         "Steel",
         "Fire"
-      ],
+      ],"NoEffectA":[],
+      "NoEffectB":["Dragon"],
       "Resistant": [
         "Fighting",
         "Bug",
-        "Dragon",
         "Dark"
       ],
       "Vulnerable": [
@@ -442,10 +448,10 @@
         "Fighting",
         "Dark",
         "Fairy"
-      ],
+      ],"NoEffectA":[],
+      "NoEffectB":["Psychic"],
       "Resistant": [
         "Ghost",
-        "Psychic",
         "Dark"
       ],
       "Vulnerable": [

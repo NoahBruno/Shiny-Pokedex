@@ -4,8 +4,8 @@ any div elemnent. see Styles.css 'root' for more info
 ========================================
 * */
 
-function colorTypes(result) {
-    switch (result) {
+function colorTypes(pokemonType) {
+    switch (pokemonType) {
         case 'normal':
             return 'Normal'
         case 'fire':

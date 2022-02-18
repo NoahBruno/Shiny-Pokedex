@@ -1,0 +1,457 @@
+[
+  {
+    "type": "Normal",
+    "strong": [
+      "ghost"
+    ],
+    "weak": [
+      "Rock",
+      "Ghost",
+      "Steel\t"
+    ],
+    "Resistant": [
+      "Ghost"
+    ],
+    "Vulnerable": [
+      "Fighting"
+    ],
+    "id": 11
+  },
+  {
+    "type": "Fighting",
+    "strong": [
+      "Normal",
+      "Rock",
+      "Steel",
+      "Ice",
+      "Dark"
+    ],
+    "weak": [
+      "Flying",
+      "Poison",
+      "Psychic",
+      "Bug",
+      "Ghost",
+      "Fairy"
+    ],
+    "Resistant": [
+      "Rock",
+      "Bug",
+      "Dark"
+    ],
+    "Vulnerable": [
+      "Flying",
+      "Psychic",
+      "Fairy"
+    ],
+    "id": 12
+  },
+  {
+    "type": "Flying",
+    "strong": [
+      "Fighting",
+      "Bug",
+      "Grass\t"
+    ],
+    "weak": [
+      "Rock",
+      "Steel",
+      "Electric\t"
+    ],
+    "Resistant": [
+      "Fighting",
+      "Ground",
+      "Bug",
+      "Grass"
+    ],
+    "Vulnerable": [
+      "Rock",
+      "Electric",
+      "Ice"
+    ],
+    "id": 13
+  },
+  {
+    "type": "Poison",
+    "strong": [
+      "Grass",
+      "Fairy"
+    ],
+    "weak": [
+      "Poison",
+      "Ground",
+      "Rock",
+      "Ghost",
+      "Steel"
+    ],
+    "Resistant": [
+      "Fighting",
+      "Poison",
+      "Grass",
+      "Fairy"
+    ],
+    "Vulnerable": [
+      "Ground",
+      "Psychic"
+    ],
+    "id": 14
+  },
+  {
+    "type": "Ground",
+    "strong": [
+      "Poison",
+      "Rock",
+      "Steel",
+      "Fire",
+      "Electric"
+    ],
+    "weak": [
+      "Flying",
+      "Bug",
+      "Grass"
+    ],
+    "Resistant": [
+      "Poison",
+      "Rock",
+      "Electric"
+    ],
+    "Vulnerable": [
+      "Water",
+      "Grass",
+      "Ice"
+    ],
+    "id": 15
+  },
+  {
+    "type": "Rock",
+    "strong": [
+      "Flying",
+      "Bug",
+      "Fire",
+      "Ice"
+    ],
+    "weak": [
+      "Fighting",
+      "Ground",
+      "Steel"
+    ],
+    "Resistant": [
+      "Normal",
+      "Flying",
+      "Poison",
+      "Fire"
+    ],
+    "Vulnerable": [
+      "Fighting",
+      "Ground",
+      "Steel",
+      "Water",
+      "Grass"
+    ],
+    "id": 16
+  },
+  {
+    "type": "Bug",
+    "strong": [
+      "Grass",
+      "Psychic",
+      "Dark"
+    ],
+    "weak": [
+      "Fighting",
+      "Flying",
+      "Poison",
+      "Ghost",
+      "Steel",
+      "Fire",
+      "Fairy"
+    ],
+    "Resistant": [
+      "Fighting",
+      "Ground",
+      "Grass"
+    ],
+    "Vulnerable": [
+      "Flying",
+      "Rock",
+      "Fire"
+    ],
+    "id": 17
+  },
+  {
+    "type": "Ghost",
+    "strong": [
+      "Ghost",
+      "Psychic"
+    ],
+    "weak": [
+      "Normal",
+      "Dark"
+    ],
+    "Resistant": [
+      "Normal",
+      "Fighting",
+      "Poison",
+      "Bug"
+    ],
+    "Vulnerable": [
+      "Ghost",
+      "Dark"
+    ],
+    "id": 18
+  },
+  {
+    "type": "Steel",
+    "strong": [
+      "Rock",
+      "Ice",
+      "Fairy"
+    ],
+    "weak": [
+      "Steel",
+      "Fire",
+      "Water",
+      "Electric"
+    ],
+    "Resistant": [
+      "Normal",
+      "Flying",
+      "Poison",
+      "Rock",
+      "Bug",
+      "Steel",
+      "Grass",
+      "Psychic",
+      "Ice",
+      "Dragon",
+      "Fairy"
+    ],
+    "Vulnerable": [
+      "Fighting",
+      "Ground",
+      "Fire"
+    ],
+    "id": 19
+  },
+  {
+    "type": "Fire",
+    "strong": [
+      "Bug",
+      "Steel",
+      "Grass",
+      "Ice"
+    ],
+    "weak": [
+      "Rock",
+      "Fire",
+      "Water",
+      "Dragon"
+    ],
+    "Resistant": [
+      "Bug",
+      "Steel",
+      "Fire",
+      "Grass",
+      "Ice"
+    ],
+    "Vulnerable": [
+      "Ground",
+      "Rock",
+      "Water"
+    ],
+    "id": 20
+  },
+  {
+    "type": "Water",
+    "strong": [
+      "Ground",
+      "Rock",
+      "Fire"
+    ],
+    "weak": [
+      "Water",
+      "Grass",
+      "Dragon"
+    ],
+    "Resistant": [
+      "Steel",
+      "Fire",
+      "Water",
+      "Ice"
+    ],
+    "Vulnerable": [
+      "Grass",
+      "Electric"
+    ],
+    "id": 21
+  },
+  {
+    "type": "Grass",
+    "strong": [
+      "Ground",
+      "Rock",
+      "Water"
+    ],
+    "weak": [
+      "Flying",
+      "Poison",
+      "Bug",
+      "Steel",
+      "Fire",
+      "Grass",
+      "Dragon"
+    ],
+    "Resistant": [
+      "Ground",
+      "Water",
+      "Grass",
+      "Electric"
+    ],
+    "Vulnerable": [
+      "Flying",
+      "Poison",
+      "Bug",
+      "Fire",
+      "Ice"
+    ],
+    "id": 22
+  },
+  {
+    "type": "Electric",
+    "strong": [
+      "Flying",
+      "Water"
+    ],
+    "weak": [
+      "Ground",
+      "Grass",
+      "Electric",
+      "Dragon"
+    ],
+    "Resistant": [
+      "Flying",
+      "Steel",
+      "Electric"
+    ],
+    "Vulnerable": [
+      "Ground"
+    ],
+    "id": 23
+  },
+  {
+    "type": "Psychic",
+    "strong": [
+      "Fighting",
+      "Poison"
+    ],
+    "weak": [
+      "Steel",
+      "Psychic",
+      "Dark"
+    ],
+    "Resistant": [
+      "Fighting",
+      "Psychic"
+    ],
+    "Vulnerable": [
+      "Bug",
+      "Ghost",
+      "Dark"
+    ],
+    "id": 24
+  },
+  {
+    "type": "Ice",
+    "strong": [
+      "Flying",
+      "Ground",
+      "Grass",
+      "Dragon"
+    ],
+    "weak": [
+      "Steel",
+      "Fire",
+      "Water",
+      "Ice"
+    ],
+    "Resistant": [
+      "Ice"
+    ],
+    "Vulnerable": [
+      "Fighting",
+      "Rock",
+      "Steel",
+      "Fire"
+    ],
+    "id": 25
+  },
+  {
+    "type": "Dragon",
+    "strong": [
+      "Dragon"
+    ],
+    "weak": [
+      "Steel",
+      "Fairy"
+    ],
+    "Resistant": [
+      "Fire",
+      "Water",
+      "Grass",
+      "Electric"
+    ],
+    "Vulnerable": [
+      "Ice",
+      "Dragon",
+      "Fairy"
+    ],
+    "id": 26
+  },
+  {
+    "type": "Fairy",
+    "strong": [
+      "Fighting",
+      "Dragon",
+      "Dark"
+    ],
+    "weak": [
+      "Poison",
+      "Steel",
+      "Fire"
+    ],
+    "Resistant": [
+      "Fighting",
+      "Bug",
+      "Dragon",
+      "Dark"
+    ],
+    "Vulnerable": [
+      "Poison",
+      "Steel"
+    ],
+    "id": 27
+  },
+  {
+    "type": "Dark",
+    "strong": [
+      "Ghost",
+      "Psychic"
+    ],
+    "weak": [
+      "Fighting",
+      "Dark",
+      "Fairy"
+    ],
+    "Resistant": [
+      "Ghost",
+      "Psychic",
+      "Dark"
+    ],
+    "Vulnerable": [
+      "Fighting",
+      "Bug",
+      "Fairy"
+    ],
+    "id": 28
+  }
+]

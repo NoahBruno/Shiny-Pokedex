@@ -19,10 +19,16 @@ const fetchPokemon = () => {
                 weight: data.weight,
                 type: data.types.map((type) => type.type.name).join(', ')
             }));
+
         displayPokemon(pokemon);
+        // setTimeout(pokeColor, 3000);
+
+
+
         $("#submit").click(function (event) {
             event.preventDefault();
-            searchPokemons(pokemon)
+            searchPokemons(pokemon);
+
 
         })
     });
@@ -30,11 +36,30 @@ const fetchPokemon = () => {
 };
 
 
+// let typeArr = pokemon.type;
+// console.log(typeArr)
+// setTimeout(color, 5000);
+// function color(){
+//     $("#color").addClass(colorTypes(typeArr))
+// const pokeColor =(pokemon)=> {
+//     pokemon.map(poke => {
+//         let typeArr = poke.type.split(", ");
+//         console.log(typeArr)
+//         $("#color").addClass(colorTypes(typeArr[0]))
+//     })
+//     // for(let i = 1; i < 78; i++){
+//
+//
+// }
+
+
 const displayPokemon = (pokemon) => {
     const pokemonHtmlS = pokemon.map(pokeman =>
-
-        `<div class="card-group">
-<div class="card" style="width:18px;">
+    //     const pokemonHtmlS = (pokeman) =>{
+    //         for (let i = 1; i < pokeman.length ; i++) {
+    //             let typeArr = pokeman.type.split(", ");
+                `<div class="card-group p-1">
+<div id="color" class="bg-dark card px-3" style="width:18px; color:whitesmoke;">
 <img src="${pokeman.image}">
         <div class="card-body text-center">
         <h5>${pokeman.name}</h5>
@@ -46,12 +71,16 @@ const displayPokemon = (pokemon) => {
         <div class="str_and_weak"></div>
         </div>
         </div> 
-</div>`)
+</div>`
+    )
 
-    $("#poke").append(pokemonHtmlS)
+
+
+    $("#poke").append(pokemonHtmlS);
     console.log(pokemon);
-
 }
+
+
 
 
 fetchPokemon();

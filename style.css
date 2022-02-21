@@ -73,3 +73,7 @@
 .Fairy {
     background-color: var(--Fairy);
 }
+
+body{
+    background-color: silver;
+}

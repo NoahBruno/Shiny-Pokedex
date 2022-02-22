@@ -10,7 +10,6 @@ const fetchPokemon = () => {
 
     Promise.all(promises).then(results => {
         const pokemon = results.map((data) =>
-
             ({
                 name: data.name,
                 id: data.id,
@@ -83,6 +82,7 @@ const displayPokemon = (pokemon) => {
 
 
 
+
 fetchPokemon();
 
 function searchPokemons(pokemon) {
@@ -118,6 +118,7 @@ const displayPokemons = (pokeman) => {
 </div>`
 
     $("#poke").append(html)
+    $("#poke").addClass("d-flex justify-content-center")
     console.log(typeArr)
 
 }

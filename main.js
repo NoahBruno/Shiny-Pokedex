@@ -20,7 +20,6 @@ const fetchPokemon = () => {
             }));
 
         displayPokemon(pokemon);
-        // setTimeout(pokeColor, 3000);
 
 
 
@@ -34,43 +33,24 @@ const fetchPokemon = () => {
 
 };
 
-
-// let typeArr = pokemon.type;
-// console.log(typeArr)
-// setTimeout(color, 5000);
-// function color(){
-//     $("#color").addClass(colorTypes(typeArr))
-// const pokeColor =(pokemon)=> {
-//     pokemon.map(poke => {
-//         let typeArr = poke.type.split(", ");
-//         console.log(typeArr)
-//         $("#color").addClass(colorTypes(typeArr[0]))
-//     })
-//     // for(let i = 1; i < 78; i++){
-//
-//
-// }
-
-
 const displayPokemon = (pokemon) => {
     const pokemonHtmlS = pokemon.map(pokeman =>
-    //     const pokemonHtmlS = (pokeman) =>{
-    //         for (let i = 1; i < pokeman.length ; i++) {
-    //             let typeArr = pokeman.type.split(", ");
-                `<div class="card-group p-1">
-<div id="color" class="bg-dark card px-3" style="width:18px; color:whitesmoke;">
-<img src="${pokeman.image}">
+                `<div class="card-group p-1 col-xs-12 col-md-4 col-lg-2">
+<div id="color" class="bg-dark card " style="color:whitesmoke;">
+<img class="w100" src="${pokeman.image}">
         <div class="card-body text-center">
         <h5>${pokeman.name}</h5>
         <p class="card-text">
             Pokedex #${pokeman.id}<br>
-            Height: ${pokeman.height}<br>
+            Height: ${Math.round(pokeman.height/10 * 3.28084)} ft.<br>
+            Weight: ${Math.round(pokeman.weight/10 * 2.20462)} lbs<br>
             Types: ${pokeman.type}<br>
         </p>
         <div class="str_and_weak"></div>
         </div>
         </div> 
-</div>`
+</div>
+`
     )
 
 
@@ -103,19 +83,23 @@ const displayPokemons = (pokeman) => {
     let typeArr = pokeman.type.split(", ");
 
     const html =
-        `<div class="card-group">
-<div class="card ${colorTypes(typeArr[0])}" style="width:18px;">
-<img src="${pokeman.image}">
+        `
+<div class="card-group p-1 col-xs-12 col-md-4 col-lg-2">
+<div id="color" class="${colorTypes(typeArr[0])} card " style="color:whitesmoke;">
+<img class="w100" src="${pokeman.image}">
         <div class="card-body text-center">
         <h5>${pokeman.name}</h5>
         <p class="card-text">
             Pokedex #${pokeman.id}<br>
-            Height: ${pokeman.height}<br>
+            Height: ${Math.round(pokeman.height/10 * 3.28084)} ft.<br>
+            Weight: ${Math.round(pokeman.weight/10 * 2.20462)} lbs<br>
             Types: ${pokeman.type}<br>
         </p>
+        <div class="str_and_weak"></div>
         </div>
         </div> 
-</div>`
+</div>
+`
 
     $("#poke").append(html)
     $("#poke").addClass("d-flex justify-content-center")
